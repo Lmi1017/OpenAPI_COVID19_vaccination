@@ -1,4 +1,4 @@
-# 대한민국 COVID19 감염 현황 분석
+# 대한민국 COVID-19 감염 현황 분석
 ## 👩‍💻 목적
 - JQuery와 Ajax를 이용한 OpenAPI 활용 연습
 - Bootstrap 활용  
