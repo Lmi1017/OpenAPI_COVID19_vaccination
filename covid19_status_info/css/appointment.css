@@ -20,7 +20,7 @@
 }
 
 /* person-info */
-.person-info1 {
+.person-info1, .person-info2 {
   display: none;
   padding: 50px 50px 50px 30px;
 }

@@ -5,16 +5,32 @@
   justify-content: space-between;
 }
 
-.non-line > a {
+.non-line>a {
   text-decoration-line: none;
   text-decoration-color: none;
 }
 
-.section-info, #carouselExampleIndicators {
+/* slide */
+.section-info,
+#carouselExampleIndicators {
   width: 1000px;
   margin: auto;
 }
 
-.card-columns {
-  margin-top: 50px;
+/* section-center-div */
+.section-center {
+  margin: 50px auto auto auto;
+  padding: 100px;
+  width: 1000px;
+}
+
+.section1-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* section-center-div : hover*/
+.section-center>.section1-wrap>.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

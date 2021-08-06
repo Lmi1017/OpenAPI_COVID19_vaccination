@@ -1,48 +1,27 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 
 <head>
   <!-- Required meta tags -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- css -->
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/index.css">
 
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
+
   <title>코로나19 예방접종센터</title>
-
-  <script>
-    function m4() {
-      $.ajax({
-        type: "GET",
-        url: "https://api.odcloud.kr/api/15077586/v1/centers?page=1&perPage=10&serviceKey=data-portal-test-key",
-        data: {},
-        success: function (response) {
-          let v_data = response['data']
-
-          for (let i = 1; i < 11; i++) {
-            let num = v_data[i]['phoneNumber']
-            $('#lulu').append(num)
-          }
-        }
-
-      })
-    }
-  </script>
 </head>
 
 <body>
-  <!-- <button onclick="m4()">dfs</button>
-  <div id="lulu"></div> -->
-
-  <!-- 여기서 부터 시작 위에는 지워 테스트야 -->
   <header class="top">
     <!-- menu -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -89,431 +68,46 @@
     </div>
   </header>
 
-
-  <!-- center info -->
-  <div class="section-info">
-    <div class="card-columns" id="card-box">
-      <div class="card">
-        <img class="card-img-top" src="./img/국립중앙의료원.png"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">국립중앙의료원</h5>
+  <!-- section-center-div -->
+  <section class="section-center">
+    <div class="section1-wrap">
+      <div onclick="location.href='https://yoo-hyeok.tistory.com/47'" class="card border-dark mb-3"
+        style="max-width: 18rem; cursor:pointer">
+        <div class="card-header" style="text-align: center;">센터</div>
+        <div class="card-body text-dark">
+          <h5 class="card-text" style="text-align: center;"><b>💉 접종 기관 및 병원 찾기</b></h5>
         </div>
-        <div class="card-body">
-          <!-- Button trigger modal -->
-          <div class="center-info-btn">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-              센터 정보
-            </button>
-
-            <!-- Modal 1 -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    우우우웅
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- appointment -->
-          <a class="btn btn-outline-info non-line" href="./appointment.html" role="button">접종 예약</a>
+        <div class="card-body text-dark">
+          <p class="card-text"><span class="badge badge-pill badge-primary">update</span> &nbsp; 실시간 병원 업데이트</p>
         </div>
+
       </div>
-      <div class="card">
-        <img class="card-img-top" src="./img/logo_img_cheonan.png"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">순천향대 천안병원</h5>
+      <div onclick="location.href='./appointment.html'" class="card border-dark mb-3"
+        style="max-width: 18rem; cursor:pointer">
+        <div class="card-header" style="text-align: center;"> 예약</div>
+        <div class="card-body text-dark">
+          <h5 class="card-text" style="text-align: center;"><b>📅 본인 및 대리자 일정예약</b></h5>
         </div>
-        <div class="card-body">
-          <!-- Button trigger modal -->
-          <div class="center-info-btn">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-              센터 정보
-            </button>
-
-            <!-- Modal 1 -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    우우우웅
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- appointment -->
-          <a class="btn btn-outline-info non-line" href="./appointment.html" role="button">접종 예약</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2021/07/29/20/23/mountains-6508015__340.jpg"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">국립중앙의료원</h5>
-        </div>
-        <div class="card-body">
-          <!-- Button trigger modal -->
-          <div class="center-info-btn">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-              센터 정보
-            </button>
-
-            <!-- Modal 1 -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    우우우웅
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- appointment -->
-          <a class="btn btn-outline-info non-line" href="./appointment.html" role="button">접종 예약</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2021/07/29/20/23/mountains-6508015__340.jpg"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">국립중앙의료원</h5>
-        </div>
-        <div class="card-body">
-          <!-- Button trigger modal -->
-          <div class="center-info-btn">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-              센터 정보
-            </button>
-
-            <!-- Modal 1 -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    우우우웅
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- appointment -->
-          <a class="btn btn-outline-info non-line" href="./appointment.html" role="button">접종 예약</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2021/07/29/20/23/mountains-6508015__340.jpg"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">국립중앙의료원</h5>
-        </div>
-        <div class="card-body">
-          <!-- Button trigger modal -->
-          <div class="center-info-btn">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-              센터 정보
-            </button>
-
-            <!-- Modal 1 -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    우우우웅
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- appointment -->
-          <a class="btn btn-outline-info non-line" href="./appointment.html" role="button">접종 예약</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2021/07/29/20/23/mountains-6508015__340.jpg"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">국립중앙의료원</h5>
-        </div>
-        <div class="card-body">
-          <!-- Button trigger modal -->
-          <div class="center-info-btn">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-              센터 정보
-            </button>
-
-            <!-- Modal 1 -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    우우우웅
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- appointment -->
-          <a class="btn btn-outline-info non-line" href="./appointment.html" role="button">접종 예약</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2021/07/29/20/23/mountains-6508015__340.jpg"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">국립중앙의료원</h5>
-        </div>
-        <div class="card-body">
-          <!-- Button trigger modal -->
-          <div class="center-info-btn">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-              센터 정보
-            </button>
-
-            <!-- Modal 1 -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    우우우웅
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- appointment -->
-          <a class="btn btn-outline-info non-line" href="./appointment.html" role="button">접종 예약</a>
-        </div>
-      </div>
-      <div></div>
-      <div class="card">
-        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2021/07/29/20/23/mountains-6508015__340.jpg"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">국립중앙의료원</h5>
-        </div>
-        <div class="card-body">
-          <!-- Button trigger modal -->
-          <div class="center-info-btn">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-              센터 정보
-            </button>
-
-            <!-- Modal 1 -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    우우우웅
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- appointment -->
-          <a class="btn btn-outline-info non-line" href="./appointment.html" role="button">접종 예약</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2021/07/29/20/23/mountains-6508015__340.jpg"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">국립중앙의료원</h5>
-        </div>
-        <div class="card-body">
-          <!-- Button trigger modal -->
-          <div class="center-info-btn">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-              센터 정보
-            </button>
-
-            <!-- Modal 1 -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    우우우웅
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- appointment -->
-          <a class="btn btn-outline-info non-line" href="./appointment.html" role="button">접종 예약</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2021/07/29/20/23/mountains-6508015__340.jpg"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">국립중앙의료원</h5>
-        </div>
-        <div class="card-body">
-          <!-- Button trigger modal -->
-          <div class="center-info-btn">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-              센터 정보
-            </button>
-
-            <!-- Modal 1 -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    우우우웅
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- appointment -->
-          <a class="btn btn-outline-info non-line" href="./appointment.html" role="button">접종 예약</a>
+        <div class="card-body text-dark">
+          <p class="card-text"><span class="badge badge-pill badge-success">백신종류</span> &nbsp; 화이자 / 모더나 / AZ</p>
         </div>
       </div>
     </div>
-
-
-  </div>
+  </section>
 
 
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
-
 </body>
 
 </html>
