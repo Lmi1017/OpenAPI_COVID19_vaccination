@@ -20,11 +20,22 @@
 
   <script>
     function p1() {
+      $('#person-info2').hide();
       let status = $('#person-info1').css('display');
       if (status == 'block') {
         $('#person-info1').hide();
       } else {
         $('#person-info1').show();
+      }
+    }
+
+    function p2() {
+      $('#person-info1').hide();
+      let status = $('#person-info2').css('display');
+      if (status == 'block') {
+        $('#person-info2').hide();
+      } else {
+        $('#person-info2').show();
       }
     }
   </script>
@@ -41,12 +52,12 @@
       <p>코로나 19 예방접종의 경우 본인 예약과 대리 예약을 할 수 있습니다. 원하시는 방법을 선택하여 주세요.</p>
       <p class="lead">
         <a class="btn btn-primary btn-lg" onclick="p1()" role="button">본인 예약</a>
-        <a class="btn btn-primary btn-lg" href="#" role="button">대리 예약</a>
+        <a class="btn btn-primary btn-lg" onclick="p2()" role="button">대리 예약</a>
       </p>
     </div>
   </header>
 
-  <!-- person-info -->
+  <!-- person-info1 -->
   <section class="person-info1" id="person-info1">
     <div class="person1">
       <form>
@@ -136,6 +147,120 @@
       </div>
 
     </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck5" required>
+        <label class="form-check-label" for="invalidCheck3">
+          개인정보 동의
+        </label>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">예약</button>
+    </form>
+
+    </div>
+  </section>
+
+  <!-- person-info2 -->
+  <section class="person-info2" id="person-info2">
+    <div class="person1">
+      <form>
+        <div class="form-row">
+          <div class="col-md-3 mb-3">
+            <label for="validationServer01">이름</label>
+            <input type="text" class="form-control" id="validationServer01" placeholder="ex_홍길동" value="" required>
+          </div>
+
+          <div class="col-md-1 mb-3">
+            <label for="validationServer04">월</label>
+            <select class="custom-select" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+
+          <div class="col-md-1 mb-3">
+            <label for="validationServer04">일</label>
+            <select class="custom-select" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationServer03">주민등록번호</label>
+            <input type="password" class="form-control is-invalid" id="validationServer02" placeholder="ex_1234567"
+              required>
+            <div class="invalid-feedback">
+              *뒷 자리만 입력하시오.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationServer04">전화번호</label>
+            <input type="text" class="form-control" id="validationServer03" placeholder="010-1234-1234" required>
+          </div>
+        </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-8 mb-3">
+        <label for="validationServer04">주소</label>
+        <input type="text" class="form-control" id="validationServer04" placeholder="세종특별자치시 도움4로 13 보건복지부 (정부세종청사 10동)"
+          required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-5 mb-3">
+        <label for="validationServer04">가족 관계 증명서</label>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="customFile">
+          <label class="custom-file-label" for="customFile">...</label>
+        </div>
+      </div>
+    </div>
+
     <div class="form-group">
       <div class="form-check">
         <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck5" required>
