@@ -1,7 +1,16 @@
-# 대한민국 COVID-19 예방접종센터 조회서비스
+# 대한민국 COVID-19 예방접종센터
+## 📂 폴더
+  - covid19_status_info : toy project <b>(main)</b>
+  - img : 사진 폴더함
+  - test_f : 오류 및 에러 찾기, 기존 파일 비교, 연습 및 실슬 폴더
+  - cetner_map : 미니지도 페이지 폴더
+
+<br>
+
 ## 👩‍💻 목적
-- JQuery와 Ajax를 이용한 OpenAPI 활용 연습
-- Bootstrap 활용  
+- Ajax를 이용한 OpenAPI 활용 기초 연습
+- JQuery와 Javascript 활용 
+- Bootstrap 활용
 
 <br>
 
@@ -16,19 +25,47 @@
 
 <br>
 
-## 해결 및 추가
-👩‍💻 오류 
+## 🔏 해결 및 추가 : 기록
+### 👩‍💻 오류 
 - 2021.08.06 
   1. > Failed to load resource: the server responded with a status of 404 (Not Found) ▶ 해결
   2. > Failed to find a valid digest in the 'integrity' attribute for resource 'https://code.jquery.com/jquery-3.2.1.min.js' with computed SHA-256 integrity 'hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='. The resource has been blocked. ▶ 해결
   3. > Found 2 elements with non-unique id #validationServer04: ▶ 해결
+- 2021.08.07
+  1. > Failed to load resource: the server responded with a status of 401 (Unauthorized) ▶ 해결
+  2. > Uncaught ReferenceError: kakao is not defined 
+      at maptest.html:13 ▶ 해결
+
 
 <br>
 
-📃 추가
+### 📃 추가 및 기록
 - 2021.08.06
-  1. `appointment.html` 대리 예약 추가
+  1. `appointment.html` 대리 예약 추가 <b>▶ ⚒완료🛠</b>
+  2. `index.html` 디자인 수정중
+- 2021.08.07
+  1. `index.html` 디자인 수정 <b>▶ ⚒완료🛠</b>
+  2. `maptest.html` kakao 지도api 연습 <b>▶ ⚒완료🛠</b>
+  3. `cetner_map` 폴더 및 지도 추가 & `appointment.html` 하이퍼링크를 이용한 미니(지도)창 추가 <b>▶ ⚒완료🛠</b>
+  3. 주석정리
 
-## 이미지 출처
-- https://www.nmc.or.kr/nmc/main/contents.do?menuNo=200385
-- https://www.schmc.ac.kr/cheonan/contents.do?key=13468
+
+### 🎫 이미지 출처
+- 질병관리청 : http://www.kdca.go.kr/index.es?sid=a2  
+
+<br>
+
+## 💻 시연
+### 🔊 사진
+![](https://images.velog.io/images/daymoon_/post/da97fd28-40ad-4600-a5c0-b009d6dc165b/image.png)  
+
+![](https://images.velog.io/images/daymoon_/post/477e57ed-8030-486b-bd27-b04c228ae2f9/image.png)  
+
+![](https://images.velog.io/images/daymoon_/post/f1479cc6-7b9f-45fa-a78f-2250530f28c4/image.png)
+
+![](https://images.velog.io/images/daymoon_/post/7471a569-6875-4408-9ab7-9e275ce860b6/image.png)  
+
+<br>
+
+### 🔊 영상
+<img width="80%" src="https://user-images.githubusercontent.com/83294927/128598554-fb8bf387-0570-4cee-be5c-79ef94b747dc.mp4"/>
