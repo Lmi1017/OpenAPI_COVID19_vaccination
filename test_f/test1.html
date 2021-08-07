@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/appointment.css">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+  <title>코로나19 예방접종 예약</title>
+
+  <script>
+    function p1() {
+      let status = $('#person-info1').css('display');
+      if (status == 'block') {
+        $('#person-info1').hide();
+      } else {
+        $('#person-info1').show();
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header class="top-info">
+    <div class="jumbotron">
+      <h1 class="display-4">코로나19 예방접종 온라인 예약</h1>
+      <p class="lead">코로나19 예방접종 온라인 예약은 현재 접속 중인 해당 홈페이지에서 진행하실 수 있습니다.
+        웹 · 모바일 모두 접속 가능하며, 총 2단계의 과정을 통하여 코로나19 예방접종 온라인 예약이 완료됩니다.</p>
+      <hr class="my-4">
+      <p class="txt1">예약 종류를 선택하여 주세요.</p>
+      <p>코로나 19 예방접종의 경우 본인 예약과 대리 예약을 할 수 있습니다. 원하시는 방법을 선택하여 주세요.</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" onclick="p1()" role="button">본인 예약</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button">대리 예약</a>
+      </p>
+    </div>
+  </header>
+
+  <!-- person-info -->
+  <section class="person-info1" id="person-info1">
+    <div class="person1">
+      <form>
+        <div class="form-row">
+          <div class="col-md-3 mb-3">
+            <label for="validationServer01">이름</label>
+            <input type="text" class="form-control" id="validationServer01" placeholder="ex_홍길동" value="" required>
+          </div>
+
+          <div class="col-md-1 mb-3">
+            <label for="validationServer04">월</label>
+            <select class="custom-select" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+
+          <div class="col-md-1 mb-3">
+            <label for="validationServer04">일</label>
+            <select class="custom-select" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationServer03">주민등록번호</label>
+            <input type="password" class="form-control is-invalid" id="validationServer03" placeholder="ex_1234567"
+              required>
+            <div class="invalid-feedback">
+              *뒷 자리만 입력하시오.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationServer04">전화번호</label>
+            <input type="text" class="form-control" id="validationServer04"
+              placeholder="010-1234-1234" required>
+          </div>
+        </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-8 mb-3">
+        <label for="validationServer04">주소</label>
+        <input type="text" class="form-control" id="validationServer04" placeholder="세종특별자치시 도움4로 13 보건복지부 (정부세종청사 10동)"
+          required>
+      </div>
+
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+        <label class="form-check-label" for="invalidCheck3">
+          개인정보 동의
+        </label>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">예약</button>
+    </form>
+
+    </div>
+  </section>
+
+  <!-- section menu -->
+  <section class="section-menu">
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">코로나19 예방접종</h5>
+          <p class="card-text txt-font">온라인 예약 방법</p>
+          <p class="card-text"><small class="text-muted">누구나 편리하게 이용할수 있도록</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">코로나19 예방접종</h5>
+          <p class="card-text txt-font">콜센터 안내</p>
+          <p class="card-text"><small class="text-muted">취약계층을 위한 콜센터 운영</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">사업참여</h5>
+          <p class="card-text txt-font">의료기관 찾기</p>
+          <p class="card-text"><small class="text-muted">코로나 19 예방접종사업 참여의료기관 정보</small></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
