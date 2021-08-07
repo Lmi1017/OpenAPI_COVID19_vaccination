@@ -1,3 +1,4 @@
+/* header */
 .jumbotron > .txt1 {
   font-size: 40px;
   color: rgb(31, 82, 158);
@@ -7,17 +8,20 @@
   padding: 50px 35px 35px 35px;
 }
 
+
 /* section-img */
 .section-menu > .card > img {
   height: 100px;
   width: 250px;
 }
 
+
 /* section menu */
 .txt-font {
   color: #01579B;
   font-weight: bold;
 }
+
 
 /* person-info */
 .person-info1, .person-info2 {

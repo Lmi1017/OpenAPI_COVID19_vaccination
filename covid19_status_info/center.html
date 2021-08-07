@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>코로나19 예방접종센터 조회</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/common.css">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <!-- script -->
+  <script>
+    $(document).ready(function () {
+      center_table();
+    });
+
+    function center_table() {
+      $('#info').empty();
+      $.ajax({
+        type: "GET",
+        url: "https://api.odcloud.kr/api/15077586/v1/centers?page=1&perPage=10&serviceKey=data-portal-test-key",
+        data: {},
+        success: function (response) {
+          let rows = response["data"];
+          for (let i = 0; i < rows.length; i++) {
+            let id = rows[i]['id'];
+            let address = rows[i]['address'];
+            let facilityName = rows[i]['facilityName'];
+            let phoneNumber = rows[i]['phoneNumber'];
+            let centerName = rows[i]['centerName'];
+            let num = i;
+
+            let temp_html = `<tr>
+                              <td>${id}</td>
+                              <td>${facilityName}</td>
+                              <td>${centerName}</td>
+                              <td>
+                                <a href="/center_map/center${num}.html" onclick="window.open(this.href, '_blank', 'width=900, height=700'); return false;">${address}</a></td>
+                              <td>${phoneNumber}</td>
+                            </tr>`;
+
+            $('#info').append(temp_html);
+          }
+        }
+      })
+    }
+  </script>
+</head>
+
+<body>
+  <!-- header-text -->
+  <header class="head-text">
+    <div class="jumbotron">
+      <h1 class="display-4">접종 기관 및 병원 정보</h1>
+      <br>
+      <p class="lead">
+        <a class="btn btn-outline-secondary btn-l" href="./index.html" role="button">◀ 돌아가기</a>
+      </p>
+    </div>
+  </header>
+
+
+  <!-- section-table -->
+  <section class="section-table">
+    <!-- center-info -->
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">순번</th>
+          <th scope="col">센터명</th>
+          <th scope="col">시설명</th>
+          <th scope="col">주소</th>
+          <th scope="col">전화번호</th>
+
+        </tr>
+      </thead>
+      <tbody id="info">
+      </tbody>
+    </table>
+  </section>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
