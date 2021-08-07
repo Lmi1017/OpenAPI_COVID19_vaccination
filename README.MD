@@ -67,5 +67,9 @@
 
 <br>
 
-### 🔊 영상
-<img width="80%" src="https://user-images.githubusercontent.com/83294927/128598554-fb8bf387-0570-4cee-be5c-79ef94b747dc.mp4"/>
+### 🔊 영상(gif)
+<img width="80%" src="https://user-images.githubusercontent.com/83294927/128598754-b1c8b552-d28c-42e1-83c2-a31c657bb6f4.gif"/>  
+
+<img width="80%" src="https://user-images.githubusercontent.com/83294927/128598755-3f189a89-6da1-4a32-a084-412ee88fa5f2.gif"/>  
+
+<img width="80%" src="https://user-images.githubusercontent.com/83294927/128598901-fbb9ba77-2f13-42c5-a9e6-7405ffea8a97.gif"/>
