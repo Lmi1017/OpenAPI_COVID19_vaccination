@@ -3,7 +3,7 @@
   - covid19_status_info : toy project <b>(main)</b>
   - img : 사진 폴더함
   - test_f : 오류 및 에러 찾기, 기존 파일 비교, 연습 및 실슬 폴더
-  - cetner_map : 미니지도 페이지 폴더
+  - center_map : 미니지도 페이지 폴더
 
 <br>
 
@@ -47,7 +47,7 @@
 - 2021.08.07
   1. `index.html` 디자인 수정 <b>▶ ⚒완료🛠</b>
   2. `maptest.html` kakao 지도api 연습 <b>▶ ⚒완료🛠</b>
-  3. `cetner_map` 폴더 및 지도 추가 & `appointment.html` 하이퍼링크를 이용한 미니(지도)창 추가 <b>▶ ⚒완료🛠</b>
+  3. `center_map` 폴더 및 지도 추가 & `appointment.html` 하이퍼링크를 이용한 미니(지도)창 추가 <b>▶ ⚒완료🛠</b>
   3. 주석정리
 
 
