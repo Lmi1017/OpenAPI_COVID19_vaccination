@@ -50,6 +50,27 @@
   3. `center_map` 폴더 및 지도 추가 & `appointment.html` 하이퍼링크를 이용한 미니(지도)창 추가 <b>▶ ⚒완료🛠</b>
   3. 주석정리
 
+<br>
+
+### 📚 ajax : 간단 요약
+- api 정보 불러오기  
+```javascript
+type: "GET",
+ url: "https://api.odcloud.kr/api/15077586/v1/centers?page=key입력",
+data: {},
+```
+- table과 a 태그 생성 & 정보 삽입
+```javascript
+let temp_html = `<tr>
+                    <td>${id}</td>
+                    <td>${facilityName}</td>
+                    <td>${centerName}</td>
+                    <td><a href="/center_map/center${num}.html" onclick="window.open(this.href, '_blank', 'width=900, height=700'); return false;">${address}</a></td>
+                    <td>${phoneNumber}</td>
+                </tr>`;
+
+```
+<br>
 
 ### 🎫 이미지 출처
 - 질병관리청 : http://www.kdca.go.kr/index.es?sid=a2  
