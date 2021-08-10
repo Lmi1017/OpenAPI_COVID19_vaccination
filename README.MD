@@ -49,6 +49,8 @@
   2. `maptest.html` kakao 지도api 연습 <b>▶ ⚒완료🛠</b>
   3. `center_map` 폴더 및 지도 추가 & `appointment.html` 하이퍼링크를 이용한 미니(지도)창 추가 <b>▶ ⚒완료🛠</b>
   3. 주석정리
+- 2021.08.10
+  1. `center.html` ajax(통신)호출시 로딩화면 출력 <b>▶ ⚒완료🛠</b>
 
 <br>
 
